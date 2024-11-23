@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PishEaterShark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">PishEater</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Stay Protected!</h1>
+            <p>Don't Let Phishers Take a Bite Out of You!</p>
+        </div>
+        <div class="hero-image">
+            <img src="2nd.jpg" alt="Fishing Scene">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="3rd.avif" alt="Metadata Verification">
+                <h3>Metadata Verification</h3>
+                <p>We extract and analyze metadata, including sender IP and domain reputation, to validate the authenticity of emails.</p>
+            </div>
+            <div class="service-card">
+                <img src="url2replace.jpg" alt="URL Inspection">
+                <h3>URL Inspection</h3>
+                <p>Our system inspects URLs for misspellings, uncommon structures, and other phishing indicators to keep you safe.</p>
+            </div>
+            <div class="service-card">
+                <img src="replace.jpg" alt="Email Text Analysis">
+                <h3>Email Text Analysis</h3>
+                <p>We break down email text into meaningful elements using NLP to detect suspicious keywords and abnormal patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- File Upload Section -->
+    <section class="upload-section">
+        <h2 class="section-title">Upload Email File for Analysis</h2>
+        <form id="mail-form" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="emailFile" class="form-label">Select Email File</label>
+                <input type="file" class="form-control" id="emailFile" name="emailFile" accept=".eml, .msg, .txt" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Analyze Email</button>
+        </form>
+        <div class="mt-4" id="result" style="display: none;">
+            <h3 class="text-center">Result: <span id="resultText"></span></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PishEater. TechBlazers.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
